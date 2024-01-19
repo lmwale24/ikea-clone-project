@@ -1,0 +1,10 @@
+/* ikea img */
+.logo img {
+    max-width: 123px;
+    max-height: 50px;
+    z-index: 1;
+   
+    margin-left: -350%;
+
+}
+

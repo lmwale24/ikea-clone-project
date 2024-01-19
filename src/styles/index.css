@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+}
+
+
+.navbar .hamburgermenu i.fa-solid.fa-bars {
+    border: 2px solid green;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
