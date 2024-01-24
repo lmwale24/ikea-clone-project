@@ -1,16 +1,26 @@
 import { Carousel } from "./components/Carousel";
-
+import {
+  UserIcon,
+  HeartIcon,
+  ShoppingCartIcon,
+  TruckIcon,
+  PowerIcon,
+  ChatBubbleLeftIcon
+} from "@heroicons/react/24/outline";
 export default function App() {
   return (
     <div className="w-screen flex flex-col">
       <div className="w-full h-10 flex gap-20 justify-center items-center bg-black text-white text-xs font-medium">
-        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer">
+        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer flex items-center gap-2">
+          <TruckIcon width={18} className="[&>path]:stroke-[2]" />
           Free planning appointments
         </div>
-        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer">
+        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer flex items-center gap-2">
+          <PowerIcon width={18} className="[&>path]:stroke-[2]" />
           Assembly via Taskrabbit
         </div>
-        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer">
+        <div className="hover:underline hover:underline-offset-1 hover:cursor-pointer flex items-center gap-2">
+          <ChatBubbleLeftIcon width={18} className="[&>path]:stroke-[2]" />
           Free delivery on delivery over £60
         </div>
       </div>
@@ -26,10 +36,17 @@ export default function App() {
               placeholder="What are you looking for?"
             />
             <div className="rounded-full cursor-pointer hover:bg-gray-100 py-2 px-3">
-              Hej! Login or signup
+              <div className="inline-flex gap-2 items-center">
+                <UserIcon width={20} className="[&>path]:stroke-[2]" /> Hej!
+                Login or signup
+              </div>
             </div>
-            <div className="cursor-pointer">Heart</div>
-            <div className="cursor-pointer">Basket</div>
+            <div className="cursor-pointer rounded-full hover:bg-gray-100 p-3">
+              <HeartIcon width={20} className="[&>path]:stroke-[2]" />
+            </div>
+            <div className="cursor-pointer rounded-full hover:bg-gray-100 p-3">
+              <ShoppingCartIcon width={20} className="[&>path]:stroke-[2]" />
+            </div>
           </div>
           <div className="flex flex-col gap-10 p-5">
             <div className="flex flex-col">
