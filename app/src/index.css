@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "IKEA";
+    src: url("../public/fonts/noto-ikea-400.woff2");
+  }
